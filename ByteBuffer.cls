@@ -63,7 +63,7 @@ End Sub
 '///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Public Sub AppendByte(ByVal Data As Byte)
-' Appends a byte array to the buffer.
+' Appends a byte to the buffer.
     
     If m_length + 1 > m_capacity Then Extend m_length * 2   ' Double the size of the buffer; this will prevent frequent, costly resizing operations.
     
